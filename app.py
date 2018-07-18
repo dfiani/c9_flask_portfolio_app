@@ -15,7 +15,8 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	return render_template('index.html', name=name)
+	add_name=name + "  is phyton enthusiasm"
+	return render_template('index.html', name=add_name)
 
 
 @app.route('/add_numbers', methods=['GET','POST'])
